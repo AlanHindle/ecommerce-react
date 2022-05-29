@@ -3,15 +3,9 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -24,6 +18,8 @@
   color: white;
 }
 
+
+
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +31,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+
+
+.NavBarPrincipal {
+  background-color: black;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+}
+ul {
+	display: flex;
+	flex-flow: row wrap;
+  align-items: center;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+li a {
+	display: block;
+	text-align: center;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 10px;
+  transition: 2s all ;
+}
+
+.navBarA {
+  border-radius: 10px;
+  transition: 2s all ;
+}
+
+
+.navBarA:hover {
+  text-decoration: none;
+  background: rgb(184,57,174);
+  background: linear-gradient(90deg, rgba(184,57,174,1) 0%, rgba(0,172,238,1) 50%, rgba(0,212,255,1) 100%);
+}
+
+.iconShoppingCart {
+  height: 20px;
 }

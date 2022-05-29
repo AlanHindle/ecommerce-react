@@ -1,12 +1,22 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Counter from './components/Counter/Counter';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+
 
 function App() {
+    const valor = 1
+
+    const increment = () => {
+        console.log('sumar', valor)
+    }
+
     return ( <div className = "App">
+        <NavBar />
+        <ItemListContainer greeting="Hola JMI"/>
         <header className = "App-header">
-        <img src = { logo }
-        className = "App-logo"
-        alt = "logo" / >
+        
         <p>
         Ecommerce JMI
         </p> 
@@ -16,6 +26,8 @@ function App() {
         rel = "noopener noreferrer" >
         Ver cursos </a> 
         </header> 
+
+        <Counter initial={0} stock={5} title='Contador' handleIncrement = {increment} />
         </div>
     );
 }
